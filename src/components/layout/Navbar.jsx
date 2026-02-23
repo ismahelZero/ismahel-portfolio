@@ -11,7 +11,7 @@ const Navbar = ({ activeSection, isScrolled }) => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'border-b border-white/5 bg-slate-950/80 py-4 shadow-lg shadow-cyan-900/20 backdrop-blur-md' : 'bg-transparent py-6'}`}
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'border-white/5 bg-slate-950/80 py-4 shadow-lg shadow-cyan-900/20 backdrop-blur-md' : 'bg-transparent py-6'}`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
         <img
