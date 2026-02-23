@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+/* 1. Prevent any horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* 2. Hide the vertical scrollbar completely */
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* 3. Global Base Colors */
 body {
     background-color: #020617; /* slate-950 */
     color: #e2e8f0; /* slate-200 */
