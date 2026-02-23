@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ThreeBackground from './components/ThreeBackground'
+import LiquidBackground from './components/LiquidBackground'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-slate-950 font-sans text-slate-200 selection:bg-cyan-500/30">
-      <ThreeBackground />
+      <LiquidBackground />
       <Navbar activeSection={activeSection} isScrolled={isScrolled} />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6">
