@@ -14,12 +14,12 @@ const Navbar = ({ activeSection, isScrolled }) => {
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'border-b border-white/5 bg-slate-950/80 py-4 shadow-lg shadow-cyan-900/20 backdrop-blur-md' : 'bg-transparent py-6'}`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
-        <span
-          className="cursor-pointer bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-2xl font-black tracking-tighter text-transparent"
+        <img
+          src="/logo.svg"
+          alt="Ismahel Zero Logo"
+          className="h-10 w-auto cursor-pointer transition-transform hover:scale-105"
           onClick={() => scrollTo('home')}
-        >
-          IZ.
-        </span>
+        />
         <div className="hidden space-x-8 text-sm font-semibold tracking-wide uppercase md:flex">
           {['About', 'Experience', 'Projects', 'Education'].map((item) => (
             <button

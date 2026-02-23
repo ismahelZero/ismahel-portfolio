@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" width="100%" height="100%">
+    <defs>
+        <linearGradient id="navGrad5" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#06b6d4"/>
+            <stop offset="100%" stop-color="#e2e8f0"/>
+        </linearGradient>
+        <filter id="navGlow5">
+            <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Icon: The Circuit -->
+    <path
+            d="M 15,20 h 20 v 40 h -10 M 45,20 h 20 l -20,40 h 20"
+            fill="none"
+            stroke="url(#navGrad5)"
+            stroke-width="6"
+            stroke-linecap="square"
+            stroke-linejoin="miter"
+    />
+    <!-- Circuit Nodes -->
+    <circle cx="15" cy="20" r="3.5" fill="#020617" stroke="#22d3ee" stroke-width="2.5" filter="url(#navGlow5)"/>
+    <circle cx="65" cy="60" r="3.5" fill="#020617" stroke="#22d3ee" stroke-width="2.5" filter="url(#navGlow5)"/>
+
+    <!-- Typography: The Lockup -->
+    <text x="88" y="40" font-family="sans-serif" font-size="24" font-weight="900" fill="#f8fafc" letter-spacing="2">
+        ISMAHEL
+    </text>
+    <text x="90" y="61" font-family="sans-serif" font-size="18" font-weight="600" fill="#94a3b8" letter-spacing="8.5">
+        ZERO
+    </text>
+</svg>

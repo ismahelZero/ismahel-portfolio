@@ -42,8 +42,8 @@ const App = () => {
         <Experience />
         <Projects />
         <Education />
-        <Footer />
       </div>
+      <Footer />
     </div>
   )
 }
